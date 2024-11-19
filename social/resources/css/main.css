@@ -1,0 +1,423 @@
+/*============== MAIN SETTINGS ============*/
+
+body {
+    margin: 0;
+    font-family: Fontin, Arial, Verdana;
+    font-size: 18px;
+    background-color: #e9ebee;
+}
+
+input {
+    font-family: Fontin, Arial, Verdana;
+    width: 100%;
+    font-size: 18px;
+    padding: 2px;
+}
+
+button {
+    font-family: Fontin, Arial, Verdana;
+    font-size: 18px;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+textarea {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+span {
+    color: red;
+}
+
+.required {
+    color: red;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1068px;
+}
+
+
+/*============== NAVBAR SETTINGS ============*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+body {
+    background: #1E1F25;
+    color: #ebebeb;
+    font-family: Arial, sans-serif;
+}
+.usernav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    width: 100%;
+    /* padding: 1rem 0; */
+    background: #2b2c31;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* position: relative; */
+}
+.usernav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 50%;
+    /* gap : 1; */
+    /* max-width: 1000px; */
+}
+.usernav ul li {
+  
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    /* padding: 0.75rem 1.5rem; */
+    /* font-weight: bold; */
+    font-size: small;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.usernav ul li a {
+    padding:  2rem 0.5rem;
+    color: #ebebeb;
+    text-decoration: none;
+}
+.usernav ul li:hover {
+    background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+    background-size: 100% 100%;
+    color: #27262c;
+    text-shadow: 0 -1px 0 #ef816c;
+    animation: spring 300ms ease-out;
+}
+.usernav ul li:active {
+    transform: translateY(4px);
+}
+.globalsearch {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background: #2b2c31;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   
+}
+.globalsearch form {
+    display: flex;
+    align-items: center;
+}
+.globalsearch select,
+.globalsearch input[type="text"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #ebebeb;
+}
+.globalsearch input[type="text"]::placeholder {
+    color: #999;
+}
+.globalsearch input[type="submit"] {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #27262c;
+    background-image: url('https://scottyzen.sirv.com/Images/v/button.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease;
+}
+.globalsearch input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+.globalsearch input[type="submit"]:active {
+    transform: translateY(2px);
+}
+
+@keyframes spring {
+    15% { transform: scale(1.2, 1.1); }
+    40% { transform: scale(0.95, 0.95); }
+    75% { transform: scale(1.05, 1); }
+    100% { transform: scale(1, 1); }
+}
+
+
+/* Create Post Control */
+
+.createpostbuttons {
+    width: 50%;
+    margin: auto;
+    overflow: auto;
+}
+
+.createpostbuttons img {
+    display: inline-block;
+    width: 12%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.createpostbuttons label {
+    cursor: pointer;
+}
+
+.createpostbuttons input[type="file"] {
+    display: none;
+}
+
+.createpostbuttons input[type=submit] {
+    width: 86%;
+    float: right;
+    background-color: #4267b2;
+}
+
+.createpostbuttons input[type=submit]:hover {
+    background-color: #23385f;
+}
+
+
+/* Post */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.post {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.public {
+    font-weight: bold;
+    color: #28a745; /* Green color for public posts */
+}
+
+.private {
+    font-weight: bold;
+    color: #e74c3c; /* Red color for private posts */
+}
+
+.postedtime {
+    font-size: 0.9em;
+    color: #888;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profilelink {
+    font-weight: bold;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.profilelink:hover {
+    color: #2980b9;
+}
+
+.caption {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333333d5;
+}
+
+.post-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.like-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.like-button:hover {
+    background-color: #2980b9;
+}
+
+/*============== HEADINGS AND LINKS ============*/
+
+h1 {
+    font-family: Fontin SmallCaps;
+    color: #23385f;
+    font-weight: normal;
+    text-align: center;
+}
+
+h2 {
+    font-family: Fontin SmallCaps;
+    color: red;
+    font-weight: normal;
+    font-size: 120%;
+    margin-bottom: 0;
+}
+
+h3,
+a.profilelink {
+    font-family: Fontin SmallCaps;
+    color: red;
+    font-weight: normal;
+    font-size: 120%;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: 12px;
+    text-decoration: none;
+}
+
+a.profilelink:hover {
+    text-decoration: underline;
+}
+
+
+/* Horizontal Line after H2 */
+
+hr {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    border-color: red;
+}
+
+/* /// */
+/*============== TAB SETTINGS ============*/
+
+div.tab {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+div.tab button {
+    background-color: #4267b2;
+    border: none;
+    outline: none;
+    color: white;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+
+div.tab button:hover {
+    background-color: #314e85;
+}
+
+
+/*==============DEFAULT TAB SETTINGS ============*/
+
+div.tab button.active {
+    background-color: #23385f;
+}
+
+#signup {
+    display: none;
+}
+
+
+/*============== SUBMIT BUTTONS ============*/
+
+input[type=submit] {
+    color: white;
+    cursor: pointer;
+    background-color: #23385f;
+    border: none;
+    padding: 8px;
+}
+
+.container input[type=submit] {
+    background-color: #4267b2;
+}
+
+.container input[type=submit]:hover {
+    background-color: #23385f;
+}
+
+
+/*============= SPECIFIC BUTTONS MODIFICATION ========*/
+
+input[type=checkbox] {
+    width: fit-content;
+}
+
+
+/*============= FRIENDS FRAMES ========*/
+
+.frame {
+    width: 200px;
+    display: inline-block;
+    box-shadow: 0 0 5px #4267b2;
+    background-color: white;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/*============= SUB CONTAINERS ========*/
+
+.userquery {
+    background-color: white;
+    box-shadow: 0 0 5px #4267b2;
+    margin: auto;
+    width: 320px;
+    padding: 20px 20px 0px 20px;
+    overflow: auto;
+    text-align: center;
+}
+
+.userquery a {
+    text-decoration: none;
+}
+
+.userquery a:hover {
+    text-decoration: underline;
+}
+
+
+/*============= DISABLED BUTTONS ========*/
+
+input:disabled {
+    cursor: auto;
+}
+
+#special:hover {
+    background-color: #4267b2;
+}
+
